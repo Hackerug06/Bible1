@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Study App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bible Study App</h1>
+            <div class="version-selector">
+                <select id="version-select">
+                    <option value="nkjv">New King James Version (NKJV)</option>
+                    <option value="niv">New International Version (NIV)</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="book-selector">
+                <select id="book-select">
+                    <!-- Books will be populated dynamically by JavaScript -->
+                </select>
+                <select id="chapter-select">
+                    <!-- Chapters will be populated dynamically by JavaScript -->
+                </select>
+            </div>
+
+            <div id="bible-text-container">
+                <div id="bible-text">
+                    <!-- Bible text will be loaded here -->
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button id="prev-chapter">Previous Chapter</button>
+                <button id="next-chapter">Next Chapter</button>
+            </div>
+        </main>
+
+        <div class="study-tools">
+            <h2>Study Tools</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search Bible">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="bible-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
