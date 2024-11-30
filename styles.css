@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.version-selector, .book-selector {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+select {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#bible-text-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    min-height: 400px;
+    line-height: 1.7;
+}
+
+.navigation-controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.study-tools {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-results {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.verse {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.verse-number {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;
+  }
